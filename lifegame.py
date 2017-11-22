@@ -3,7 +3,7 @@ import os
 import time
 
 
-def whatnum(n):
+def whatnum(n):#use random number to sim. the lifegame
     if int(n * 10) % 2 == 0:
         return '*'
     else:
@@ -11,7 +11,7 @@ def whatnum(n):
 
 
 def check(amap):
-    temp = [[] for i in range(0, 45)]  # python的二维列表真是奇怪，准确说，这不算二维
+    temp = [[] for i in range(0, 45)]  # python的二维列表真是奇怪
     for x in range(0, 45):
         temp[x] = [0 for i in range(0, 45)]
     for x in range(1, 44):
@@ -62,13 +62,13 @@ def demo(amap):
     print('Please input the demo number 1 or 2')
     n = int(input())
     if n == 1:
-        amap[9][12] = '*'
+        amap[9][12]  = '*'
         amap[10][12] = '*'
         amap[10][14] = '*'
         amap[11][10] = '*'
         amap[12][15] = '*'
         amap[12][16] = '*'
-        amap[13][9] = '*'
+        amap[13][9]  = '*'
         amap[13][10] = '*'
         amap[14][15] = '*'
         amap[15][11] = '*'
@@ -77,22 +77,22 @@ def demo(amap):
         amap[16][13] = '*'
         printarr(amap)
     if n == 2:
-        amap[9][10] = '*'
+        amap[9][10]  = '*'
         amap[10][10] = '*'
-        amap[11][9] = '*'
+        amap[11][9]  = '*'
         amap[11][10] = '*'
         amap[11][11] = '*'
-        amap[14][9] = '*'
+        amap[14][9]  = '*'
         amap[14][10] = '*'
         amap[14][11] = '*'
         amap[15][10] = '*'
         amap[16][10] = '*'
         amap[17][10] = '*'
         amap[18][10] = '*'
-        amap[19][9] = '*'
+        amap[19][9]  = '*'
         amap[19][10] = '*'
         amap[19][11] = '*'
-        amap[22][9] = '*'
+        amap[22][9]  = '*'
         amap[22][10] = '*'
         amap[22][11] = '*'
         amap[23][10] = '*'
